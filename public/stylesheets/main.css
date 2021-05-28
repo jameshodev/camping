@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.thumbnail img{
+	width: 100%;
+}
+
+.thumbnail{
+	padding: 0px;
+}
+
+.thumbnail .caption-full {
+	padding: 9px;
+}
+
+.delete-form{
+	display: inline;
+}
+
+.checked {
+    color: orange;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+ 
+.padding {
+  background-color: #bad2e3ab;
+	position: relative;
+	margin-bottom: 25px;
+  padding: 10px;
+}
+
+.search-form {
+	display: inline-block;
+	
+}
+
+.btn-topic {
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+  margin-right: 10px;
+}
+
+#profile {
+	height: 100%;
+	vertical-align: middle;
+	padding: 6px 0 0 0;
+}
+
+.image-thumb {
+	width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+.media-size {
+	max-width: 250px;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* Comment Section */
+.comment {
+  min-height: 20px;
+  padding: 0px;
+  margin-bottom: 20px;
+  background-color: #EEE;
+  border-radius: 4px;
+  border: 1px solid #cfd2d1;
+  .box-shadow(inset 0 1px 1px rgba(0, 0, 0, .05));
+  blockquote {
+    border-color: #fff;
+    border-color: rgba(0, 0, 0, .15);
+  }
+}
+
+.comment-header {
+  padding: 10px;
+  background-color: #cfd2d1;
+}
+
+.comment-hidden {
+  background-color: #f3f4f4;
+  padding: 10px;
+  border-left: 5px solid #5cb85c;
+}
+
+.comment-body {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+body {
+  background-position: bottom;
+  background-image: url("../pics/soc1.jpg");
+  background-repeat: repeat-x;
+  background-size: 1700px;
+}
+
+// Sizes
+.comment-lg {
+  padding: 24px;
+  border-radius: @border-radius-large;
+}
+.comment-sm {
+  padding: 9px;
+  border-radius: @border-radius-small;
+}
+
+.ca-logo {
+    
+}
+
+.navbar-logo {
+  position: relative;
+  min-height: 70px;
+  margin-bottom: 20px;
+}
+
+.ca-navbar-brand {
+  float: left;
+  height: 70px;
+  padding: 10px 15px 0px 0px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.middle-align {
+  height: 70px;
+  line-height: 70px;
+  padding: 15px;        
+}
+
+.navbar {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+	box-shadow: 0 6px 8px -8px black;
+  -webkit-box-shadow: 0 6px 8px -8px black;
+	-moz-box-shadow: 0 6px 8px -8px black;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 5px 15px 0px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-brand img {
+  width: 280px;
+}
+
+.navbar-default .navbar-nav li a {
+  padding-top: 20px;
+  font-size: 1.2em;
+  
+}
+
+.padding-form {
+  background-color: #bad2e3ab;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Login form */
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form textarea {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 13px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.header-form {
+  padding-bottom: 5px;
+}
+
+.marker-overlays {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+  cursor: default;
+}
+
+.padding-top {
+  padding-top: 10px;
+}

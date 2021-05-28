@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+		<!-- Title -->
+		<title>California Camping - Best campsites around California</title>
+		
+		<!-- Favicon -->
+    <link rel="icon" type="image/png" href="/pics/icon.png"/>
+
+		<!-- Core Stylesheet -->
+		<!-- <link rel="stylesheet" href="/stylesheets/live.css"> -->
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link rel="stylesheet" href="/stylesheets/main.css"> 
+		<!-- <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"> 
+		<link rel="stylesheet" href="/stylesheets/owl.carousel.min.cs"> 
+		<link rel="stylesheet" href="/stylesheets/animate.css"> 
+		<link rel="stylesheet" href="/stylesheets/font-awesome.min.css"> 
+		<link rel="stylesheet" href="/stylesheets/classy-nav.min.css"> 
+		<link rel="stylesheet" href="/stylesheets/nice-select.min.css">  -->
+		
+		
+	</head>
+	<body>
+	<div id="page-container">	
+		<div id="content-wrap">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a class="navbar-brand" href="/campgrounds"><img alt="Brand" src="/pics/cacamping.svg"></a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<!-- <li><a href="/campgrounds">Home</a></li>
+								<li><a href="/about">About</a></li> -->
+							</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<% if(!currentUser){ %>
+                  <li><a href="/register"><span class="glyphicon glyphicon-tent"></span> Sign Up/Login</a></li>
+							<% } else { %>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user "></span> Hi, <%= currentUser.username %>! <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+											<li><a href="/users/<%= currentUser._id %>">My Profile</a></li>
+											<li><a href="/logout">Logout</a></li>
+                    </ul>
+                  </li>             
+							<% } %>
+						</ul>
+
+					</div>
+
+				</div>
+			</nav>
+
+			<div class = "container">
+				<% if(error && error.length > 0){ %>
+					<div class="alert alert-danger" role="alert">
+						<%= error %>
+					</div>	
+				<% } %>
+			</div>
+
+			<div class = "container">
+				<% if(success && success.length > 0){ %>
+					<div class="alert alert-success" role ="alert">
+						<%= success %>
+					</div>	
+				<% } %>
+			</div>
+			<div class="container">

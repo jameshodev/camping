@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+
+  <div class="login-page">
+    <div class="form">
+      <form action="/campgrounds" method="POST" enctype="multipart/form-data">
+        <h3 class="pull-left header-form">
+          Create a new campground
+        </h3>
+        <input class="form-control" type="text" name="campground[name]" placeholder="Name of Campsite">
+        <!-- <input class="form-control" type="number" name="price" placeholder="Price/day($)" min="0.01" step="0.01"> -->
+        <input class="form-control" type="text" name="location" id="location" placeholder="Address">
+        <textarea class="form-control" type="text-area" name="campground[description]" placeholder="Description"></textarea>
+        <div class="form-group">
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+        <button>Submit</button>
+      </form>
+      <div class="pull-left padding-top">
+        <span class="glyphicon glyphicon-arrow-left " aria-hidden="true"></span>
+        <a href="/campgrounds">Go Back</a>	 
+      </div>
+    </div>
+  </div>
+ 
+<% include ../partials/footer %>
+	

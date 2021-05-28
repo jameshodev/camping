@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+
+  <div class="login-page">
+
+    <div class="form">
+
+      <form action="/register" method="POST">
+
+        <h3 class="pull-left header-form">
+          REGISTER
+        </h3>
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <input type="text" name="firstName" placeholder="first name">
+        <input type="text" name="lastName" placeholder="last name">
+        <input type="email" name="email" placeholder="email">
+        <button>create</button> 
+        <p class="message">Already registered? <a href="/login">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+<% include ./partials/footer %>

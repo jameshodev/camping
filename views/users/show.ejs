@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+
+
+
+	<div>		
+		<div>
+			<h3><%= user.username %>'s posts:</h3>
+
+				<% campgrounds.forEach(function(campground){ %>		
+			<div class="col-lg-3 col-md-4 col-sm-12">
+				<div class="media">
+					<div class="media-left">
+						<h4>
+						<a  href="/campgrounds/<%= campground.slug %>"><%= campground.name %>
+							<span>(<%= moment(campground.createdAt).fromNow() %>)</span>
+							<div>
+								<img class="media-object media-size" src="<%= campground.image %>" alt="...">
+							</div>
+							
+						</a>
+						</h4>
+					</div>
+				</div>
+			</div>
+				<% }) %>
+			
+
+		</div>
+
+	</div>	
+	
+	
+	
+
+
+<% include ../partials/footer %>
